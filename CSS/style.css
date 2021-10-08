@@ -1,99 +1,8 @@
-header{
-    width: 100%;
-    text-align: center;
-}
-
-header h1{
-    font-size: 300%;
-    color: tomato;
-    /* medium = 16px = 1em = 100% = 12pt */
-}
-
-nav{
-    width: 100%;
-    background-color: tomato;
-}
-
-nav ul{
-    list-style: none;
-    overflow: auto;
-    margin: 0px;
-    padding: 5px 0px;
-    display: flex;
-    border-top: 5px solid rgba(135, 206, 250);
-    border-bottom: 5px solid rgba(135, 206, 250);
-    display: flex;
-}
-
-nav ul li{
-    margin: 0px;
-    padding: 10px 25px;
-    display: inline;
-    text-align: center;
-    flex: 1;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-nav ul li:hover{
-    background-color: rgba(135, 206, 250, 0.7);
-}
-
-nav ul a:hover{
-    color: white;
-}
-
-footer{
-    width: 100%;
-    display: flex;
-
-}
-
-#copyright{
-    flex: 1;
-    overflow: auto;
-    text-align: center;
-}
-
-#sns{
-    flex: 1;
-    overflow: auto;
-    text-align: center;
-}
-
-#my{
-    height: 500px;
-    width: 500px;
-}
-
-#profile1{
-    text-align: center;
-}
-
-#profile2{
-    text-align: center;
-}
-
-footer{
-    height: 20%;
-    background-color: #F0EDCC;
-
-}
-
-#info{
-    height: 100%;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-td, th {
-    text-align : center;
-    vertical-align : middle;
-  }
-
-section{
-    background-color: #F0EDCC;
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .flex{
@@ -109,9 +18,7 @@ section{
     flex: 2;
 }
 
-nav ul li a:hover{
-    color: bisque;
-}
+
 
 a { 
     text-decoration: none; 
@@ -120,7 +27,9 @@ a {
 
 #webImg{
     height: 100%;
-    width: 100%;
+    width: 80%;
+    display: block;
+    margin: auto;
 }
 
 #portfolio h2{
@@ -128,9 +37,207 @@ a {
 }
 
 *{
-    font-family: "맑은 고딕",Arial, Helvetica, sans-serif;
+    font-family: "ONE-Mobile-POP",Arial, Helvetica, sans-serif;
 }
 
-a{
-    text-decoration: none;
+
+/* header */
+header{
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    background-color: white;
+    border-top: 10px solid #815854;
+    border-right: 10px solid #815854;
+    border-left: 10px solid #815854;
+}
+
+header h1{
+    font-size: 300%;
+    color: tomato;
+    /* medium = 16px = 1em = 100% = 12pt */
+}
+
+.home{
+    font-size: 300%;
+    color: tomato;
+}
+
+.home1{
+    flex: 1;
+    height:300px; line-height:300px;
+}
+
+.home1 img{
+    vertical-align:middle;
+}
+
+.home2{
+    flex: 2;
+
+}
+
+.home2 h2{
+    text-align: center;
+}
+
+.home2 h1{
+    text-align: center;
+}
+
+#iii{
+    height: 200px;
+    width: 200px;
+    vertical-align: middle;
+}
+
+span {
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+ }
+
+ /* nav */
+nav{
+    position:sticky;
+    top: 0;
+    width: 100%;
+    background-color: #815854;
+    z-index: 1;
+}
+
+nav ul{
+    list-style: none;
+    overflow: auto;
+    margin: 0px;
+    padding: 5px 0px;
+    display: flex;
+}
+
+nav ul li{
+    margin: 0px;
+    padding: 10px 25px;
+    display: inline;
+    text-align: center;
+    flex: 1;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: all 0.5s;
+}
+
+.line{
+    border-left: 2px solid rgba(0,0,0,0.8);
+    border-right: 2px solid rgba(0,0,0,0.8);
+    height: 50px;
+    background-color: #815854;
+}
+
+nav ul li .text{
+    height: 50px;
+    background-color: #815854;
+}
+
+nav ul li a:hover{
+    color: bisque;
+}
+
+nav ul li .text a h2{
+    font-family: "ONE-Mobile-POP";
+}
+nav ul li .line a h2{
+    font-family: "ONE-Mobile-POP";
+}
+/* section */
+#title{
+    width: 100%;
+    font-size: 5em;
+    text-align: center;
+}
+
+#title:hover{
+    color: white;
+}
+
+.aboutme{
+    flex: 1;
+    display: block;
+    text-align: center;
+    height: 250px;
+}
+
+.icon{
+    flex: 1;
+    display: block;
+    text-align: center;
+    height: 250px;
+    font-size: 80px;
+    color: black;
+}
+
+.icon p{
+    font-size: 50px;
+    color: black;
+}
+
+.mySlides {
+    display:none;
+}
+
+.moreMe{
+    text-align: center;
+    font-size: 16px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    display: flex;
+    height: 250px;
+}
+
+#copyright{
+    overflow: auto;
+    text-align: center;
+    font-size: small;
+    padding: 80px 0;
+}
+
+#sns{
+    overflow: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.phone{
+    flex: 1;
+    height: 50%;
+    font-size: 30px;
+}
+
+.sns{
+    flex: 1;
+    height: 50%;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #F9EBDE;
+}
+
+div{
+    background-color: #F9EBDE;
 }
