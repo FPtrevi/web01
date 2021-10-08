@@ -6,73 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wlecome to Chan`s Site</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/w3.css">
+    <link rel="stylesheet" href="CSS/w3pro.css">
+    <script src="https://kit.fontawesome.com/dea16c6b66.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header -->
-    <header>
-        <a href="#"><h1>Chan Home</h1></a>
+    <header class="flex">
+        <div class="home1">
+            <img src="image/MyImage.jpg" id="iii" class="w3-circle">
+        </div>
+        <div class="home2">
+            <br>
+            <span>welcome to<br>
+            <a href="#" class="home">Chan`s HOME</a></span><br>
+        </div>
+        <div class="home1"></div>
+        <br>
     </header>
+
     <!-- nav -->
     <nav>
         <ul>
-            <li><div class="text"><a href="#"><h2>About</h2></a></div></li>
-            <li><div class="text"><a href="#profile"><h2>profile</h2></a></div></li>
-            <li><div class="text"><a href="#portfolio"><h2>portfolio</h2></a></div></li>
-            <li><div class="text"><a href="#contact"><h2>contact</h2></a></div></li>
+            <li><div class="text"><a href="#"><h2>Home</h2></a></div></li>
+            <li><div class="line"><a href="#profile"><h2>About Me</h2></a></div></li>
+            <li><div class="text"><a href="#contact"><h2>Contact</h2></a></div></li>
         </ul>
     </nav>
+
     <!-- section -->
     <section>
-        <!-- 절대주소/상대주소 -->
-        <div id="profile" class="flex">
-            <div id="profile1" class="one-flex">
-                <img src="image/MyImage.jpg" id="my">
+        <div id="title">About Me!</div>
+        <div class="flex">
+            <div class="icon">
+                <i class="fas fa-user"></i><br>
+                <p>About me</p>
             </div>
-            <div id="profile2" class="one-flex">
-                <table id= "info">
-                    <tr>
-                        <th>이름</th>
-                        <th>오현찬</th>
-                    </tr>
-                    <tr>
-                        <th>나이</th>
-                        <th>24</th>
-                    </tr>
-                    <tr>
-                        <th>직업</th>
-                        <th>학생</th>
-                    </tr>
-                    <tr>
-                        <th>취미</th>
-                        <th>음악감상</th>
-                    </tr>
-                </table>
+            <div class="icon">
+                <i class="fas fa-thumbs-up"></i><br>
+                <p>favorite</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-briefcase"></i><br>
+                <p>career</p>
+            </div>
+            <div class="icon">
+                <i class="fas fa-pencil-ruler"></i><br>
+                <p>skill</p>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="aboutme">
+                이름 : 오현찬<br>
+                나이 : 24<br>
+                성별 : 남<br>
+                직업 : 학생<br>
+                종교 : 기독교<br>
+            </div>
+            <div class="aboutme">
+                취미 : 음악 <br>
+                좋아하는 것 : 친구<br>
+                싫어하는 것 : 귀 아픈 노래<br>
+                장점 : 적은 스트레스<br>
+                단점 : 낯가림<br>
+            </div>
+            <div class="aboutme">
+                개운초등학교 졸업<br>
+                남창중학교 졸업<br>
+                남창고등학교 졸업<br>
+                동의대학교 입학<br>
+            </div>
+            <div class="aboutme">
+                음향엔지니어 기타 python <br>
+                HTML CSS JAVASCRIPT <br>
+                R UIPath
             </div>
         </div>
         <!-- <h2>My profile</h2> -->
-    </div>
-    <div id="portfolio">
-        <h2>I MADE</h2>
-        <div class=flex>
-            <div class="two-flex">
-                <a href="http://1.253.254.107/deu20171194/index.html"><img src="image/myweb.png" id="webImg"></a>
+        <div id="title">More Me!</div>
+            <div class="w3-content w3-display-container">
+                <div class="mySlides">
+                    <div class="moreMe">즐겨찾는 사이트</div>
+                    <a href="https://nomadcoders.co/?utm_source=naver&utm_medium=search&utm_campaign=brand_keyword"><img src="image/nomardcoder.png" style="width:100%"></a>
+                </div>
+                <div class="mySlides">
+                    <div class="moreMe">좋아하는 음식점</div>
+                    <a href="https://map.naver.com/v5/entry/place/1319310168?c=14367334.54635683,4184882.7944920976,15,0,0,0,dh&placePath=%3Fentry=plt"><img src="image/restaurant2.jpg" style="width:100%"></a>
+                </div>
+                <div class="mySlides">
+                    <div class="moreMe">내가 만든 사이트</div>
+                    <a href="http://1.253.254.107/deu20171194/index.html"><img src="image/myweb.png" style="width:100%"></a>
+                </div>
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
             </div>
-        </div>
-    </div>
-    <div id="contact" class="flex">
-        <div class="one-flex">
-            <h2>My Phone</h2>
-        </div>
-        <div class="one-flex">
-            <h2>010-7416-2122</h2>
-        </div>
-    </div>
-    <div id="link">
+          
+
     </section>
     <!-- footer -->
-    <footer>
-        <div id="copyright"></div>
-        <div id="sns"></div>
+    <footer class="flex">
+        <div id="copyright" class="one-flex">
+            <br>
+            Copyrightⓒ2021. Chan.All rights reserved.<br><br>
+            본 사이트는 상업적 목적이 아닌 오현찬 개인소개 사이트로 제작되었습니다.
+        </div>
+        <div id="sns" class="one-flex">
+            <div class="phone">phone : 010-7416-2122</div>
+            <div class="sns">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="far fa-envelope"></i>
+            </div>
+        </div>
     </footer>
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+
 </body>
 </html>
